@@ -15,3 +15,7 @@
 
 # Solution Architecture
 ![SolutionArchitecture](https://github.com/azure-datasolution/ASO/blob/master/SolutionArchitecture.png)
+
+# References
+* CloudScaleAnalytics 
+https://github.com/azure-datasolution/CloudScaleAnalytics  
