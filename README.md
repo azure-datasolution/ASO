@@ -1,5 +1,5 @@
 # ASO
-* Cloud Scale Analytics Hands on Lab
+* Azure Start Offer Hands on Lab
 
 # Agenda  
 * Day 1  
