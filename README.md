@@ -14,7 +14,7 @@
 17:00 - Closing  
 
 # Solution Architecture
-![SolutionArchitecture](https://github.com/azure-datasolution/ASO/blob/master/SolutionArchitecture_v3.png)
+![SolutionArchitecture](https://github.com/azure-datasolution/ASO/blob/master/SolutionArchitecture.png)
 
 # References
 * CloudScaleAnalytics 
