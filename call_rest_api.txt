@@ -1,0 +1,71 @@
+import requests
+import json
+
+# URL for the web service
+scoring_uri = 'http://ce80a50b-01ab-4a29-8af7-84bb0b44b0a8.westus.azurecontainer.io/score'
+# If the service is authenticated, set the key or token
+key = 'QWpOOJHS6nrd8aQQpFj65vakmJ9OxX6A'
+
+data = {"data": [
+                    {
+                        "transactionID":"40A1F735-520A-4885-9273-AFA2CB8DE4FF",
+                        "accountID":"A1688853516417580",
+                        "transactionAmountUSD":798.86022,
+                        "transactionAmount":6198,
+                        "transactionCurrencyCode":"HKD",
+                        "transactionDate":20130611,
+                        "transactionTime":40813,
+                        "localHour":13,
+                        "transactionIPaddress":153.129,
+                        "ipState":"tokyo",
+                        "ipPostcode":"100-0000",
+                        "ipCountryCode":"jp",
+                        "isProxyIP":"FALSE",
+                        "browserLanguage":"zh-HK",
+                        "paymentInstrumentType":"CREDITCARD",
+                        "cardType":"MC",
+                        "paymentBillingPostalCode":"NA",
+                        "paymentBillingState":"NA",
+                        "paymentBillingCountryCode":"HK",
+                        "cvvVerifyResult":"M",
+                        "digitalItemCount":2,
+                        "physicalItemCount":1
+                    },
+                    {
+                        "transactionID":"D11F3504-26D2-4FCF-AE33-0B96E80452F0",
+                        "accountID":"A1055521409411370",
+                        "transactionAmountUSD":139.99,
+                        "transactionAmount":139.99,
+                        "transactionCurrencyCode":"USD",
+                        "transactionDate":"20130527",
+                        "transactionTime":"204016",
+                        "localHour":13,
+                        "transactionIPaddress":"75.7",
+                        "ipState":"colorado",
+                        "ipPostcode":"80113",
+                        "ipCountryCode":"us",
+                        "isProxyIP":"FALSE",
+                        "browserLanguage":"en-US",
+                        "paymentInstrumentType":"CREDITCARD",
+                        "cardType":"AMEX",
+                        "paymentBillingPostalCode":"80108",
+                        "paymentBillingState":"CO",
+                        "paymentBillingCountryCode":"US",
+                        "cvvVerifyResult":"M",
+                        "digitalItemCount":1,
+                        "physicalItemCount":0
+                    }
+              ]
+       }
+
+# Convert to JSON string
+input_data = json.dumps(data)
+
+# Set the content type
+headers = {'Content-Type': 'application/json'}
+# If authentication is enabled, set the authorization header
+headers['Authorization'] = f'Bearer {key}'
+
+# Make the request and display the response
+resp = requests.post(scoring_uri, input_data, headers=headers)
+print(resp.text)
