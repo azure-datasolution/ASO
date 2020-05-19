@@ -23,3 +23,7 @@ https://github.com/azure-datasolution/CloudScaleAnalytics
 # ETC
 * Email URL
 https://prod-06.koreacentral.logic.azure.com:443/workflows/21f3052675d24be0aa4298a9b0490ce8/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=BfXuXTp05p20wnvDFzkUgi3xbf3XGSB-1qapyC_EDFA
+
+# Databricks
+url : https://adb-7283045618948357.17.azuredatabricks.net
+Access token : dapid1fb7b77a6d0e7f9fb2ccf337367a9a5
