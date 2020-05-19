@@ -26,13 +26,3 @@ https://prod-06.koreacentral.logic.azure.com:443/workflows/21f3052675d24be0aa429
 
 {"DataFactoryName":"@{pipeline().DataFactory}","PipelineName":"@{pipeline().Pipeline}",
 "Subject":"Pipeline Succeeded","Message":"Succeeded!","EmailTo":"본인의 메일계정"}
-
-# Databricks
-url : https://adb-7283045618948357.17.azuredatabricks.net
-Access token : dapid1fb7b77a6d0e7f9fb2ccf337367a9a5
-
-#Service principal ID
-1e0a52e0-0a95-47e5-b8bf-ad35e80b65a3
-
-#Service principal key
-9954b83f-2ebc-497d-ab62-873a20e6c24c
