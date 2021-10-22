@@ -1,10 +1,10 @@
 
 구독 ID : 
-34ca110e-0054-4bb4-ac0e-95f0f8b43127
+
 
 * 스토리지 url :
-https://asogen2storage.blob.core.windows.net/structured
+
 
 * 스토리지 (asogen2storage) 엑세스 키 :
-U812+vO8X0XHLQS6r+BVZA2pq02MtFF+71muo6WHdUb0YRx+Te5pqY79Q0aBQ/MsWc3p2LXzuUaJlZXarpUBxg==
+
  
